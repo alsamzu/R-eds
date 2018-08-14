@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#pattern);
+      }
+    </style>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 255 170">
+      <image width="255" height="170" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAACqCAMAAABVlWm8AAAAD1BMVEXtKTn///8AI5V/kcr5s7mTqUipAAAAyklEQVR4nO3PwQ0AIAgEsFPYf2aXgIdJu0FzB9WZ19nl7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7//d/wHYpKC1ql4fLgAAAABJRU5ErkJggg=="/>
+    </pattern>
+  </defs>
+  <g id="indcex" transform="translate(-312 -98)">
+    <rect id="indcex-2" data-name="indcex" class="cls-1" width="24" height="18" rx="3" transform="translate(312 98)"/>
+  </g>
+</svg>

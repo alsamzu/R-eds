@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #111;
+      }
+
+      .cls-2 {
+        fill: red;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_19_1" data-name="Symbol 19 – 1" transform="translate(-29.418 -378)">
+    <g id="Group_280" data-name="Group 280" transform="translate(29.418 378)">
+      <circle id="Ellipse_8" data-name="Ellipse 8" class="cls-1" cx="11" cy="11" r="11" transform="translate(0 0)"/>
+      <g id="mail" transform="translate(5.077 7.333)">
+        <path id="Path_30" data-name="Path 30" class="cls-2" d="M9.867,975.4a1.229,1.229,0,0,0-.332.058l5.042,4.421a.479.479,0,0,0,.679,0l5.042-4.421a.773.773,0,0,0-.318-.058Zm-.852.737c0,.043-.014.087-.014.116v6.067a.869.869,0,0,0,.867.867H19.979a.869.869,0,0,0,.867-.867v-6.067a.282.282,0,0,0-.014-.116l-5.013,4.392a1.384,1.384,0,0,1-1.82,0Z" transform="translate(-9 -975.4)"/>
+      </g>
+    </g>
+  </g>
+</svg>

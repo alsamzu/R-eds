@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f5f5f5;
+      }
+
+      .cls-2 {
+        fill: #3e3e3e;
+      }
+    </style>
+  </defs>
+  <g id="Telegram_logo" transform="translate(-308 -1927)">
+    <circle id="Ellipse_17" data-name="Ellipse 17" class="cls-1" cx="19.5" cy="19.5" r="19.5" transform="translate(308 1927)"/>
+    <path id="Path_210" data-name="Path 210" class="cls-2" d="M84.6,95.438c-.632,0-.524-.239-.742-.84L82,88.483,96.3,80" transform="translate(239.325 1860)"/>
+    <path id="Path_211" data-name="Path 211" class="cls-2" d="M98,149.378a1.249,1.249,0,0,0,.975-.488l2.6-2.528-3.243-1.956" transform="translate(225.925 1806.059)"/>
+    <path id="Path_212" data-name="Path 212" class="cls-2" d="M57.226,83.918l7.858,5.806c.9.495,1.544.239,1.767-.833l3.2-15.074c.327-1.313-.5-1.909-1.358-1.519L49.909,79.541c-1.282.514-1.275,1.23-.234,1.548l4.82,1.5,11.159-7.04c.527-.319,1.01-.148.613.2" transform="translate(267.031 1866.549)"/>
+  </g>
+</svg>
