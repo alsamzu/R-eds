@@ -50,14 +50,89 @@
          <li class="nav-item">
         <a class="nav-link" href="#"><i class="fa fa-telegram"></i></a>
         </li>
-         <li class="nav-item">
+         <li class="nav-item" style="margin-right: 2em">
         <a class="nav-link" href="#"><i class="fa fa-envelope"></i></a>
         </li>
       </ul>
 
   </div>
 </nav>
+<!--End of Dark Navbar-->
 
+ <!--========== NAVIGATION SECTION ========================== -->
+    <nav class="navbar navbar-expand-lg navbar-light " id="navtwo">
+
+         <a class="navbar-brand ml-5" href="#">
+    <img src="img/logo.jpg" width="60" height="40" class="d-inline-block align-top" alt="">
+
+  </a>
+
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+       <!-- Search Icon-->
+            <a href="#"  class="pr-5 pt-3" id="search" data-toggle="modal" data-target="#SearchModal">
+                <i class="fa fa-search"></i>
+            </a>
+            <!-- Search icon End-->
+            <!-- Dropdown -->
+            <div class="btn-group  float-left pr-5" >
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="drop">
+                    <img src="img/eng.jpeg" width="25" height="20" alt=""> EN </button>
+                <div class="dropdown-menu pull-left" id="drps">
+                    <a class="dropdown-item" href="#" id="drp">English
+                        <img src="img/eng.jpeg" width="20" height="20" alt="">
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" id="drp">French
+                        <img src="img/france.png" width="20" height="20" alt="">
+                    </a>
+
+                </div>
+            </div>
+<!-- End of Dropdown-->
+<!--     Menu icon-->
+ <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+<!--     End of Menu icon-->
+
+    </div>
+  </div>
+</nav>
+    <!-- End of Navbar-->
+
+    <!-- End of Navbar-->
+
+<!-- Search Modal-->
+
+ <div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <!--        data-backdrop="false"-->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="margin-top:200px;">
+                <div class="modal-headerzz">
+                    <!--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+
+                </div>
+                <div class="modal-body">
+
+                    <!--                    <h1>Search</h1>-->
+                    <form class="navbar-form " role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control fa fa-search" placeholder="Search">
+                        </div>
+                        <!--                        <button type="submit" class="btn btn-default">Submit</button>-->
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
