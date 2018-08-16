@@ -1,23 +1,342 @@
 .nav-item{
     padding-left: 1em;
 }
-#drop{
-    background-color: #fff;
-}
-#navtwo{
 
-   background-color: #fff;
+body {
+    font-family: 'SF-Pro', 'Raleway', sans-serif;
+    /*    background: #f0f0f0;*/
 }
-#search{
+
+
+/*======== GENERAL RESOURCES==============*/
+
+.section {
+    margin: 30px 0px;
+}
+
+.section-title {
+    color: #FF0000;
+    margin: 20px 0px;
+    text-decoration-style: double;
+}
+
+
+/*======== LOAD MORE SECTION ===========*/
+
+#load-more {
+    color: red;
+    text-align: center;
+    padding-top: 0;
+}
+
+
+/*======== END OF LOAD MORE SECTION ===========*/
+
+
+/*======= More-in-family =========*/
+
+#more-in-family .card {
+/*    margin-bottom: 10px;*/
+}
+
+
+/*======== THEME COLORS ================*/
+
+.colorMainHeaders {
+    text-decoration-color: #FF0000;
+}
+
+.colorArticleHeaders {
+    text-decoration-color: #111111;
+}
+
+.colorBodyText {
+    text-decoration-color: #333333;
+}
+
+.colorBackground {
+    text-decoration-color: #FFFFFF;
+}
+
+
+/*======== END OF THEME COLORS ========*/
+
+#drop {
+    background: white;
+}
+#drp{
+    padding-left: 0.5rem;
+}
+
+
+h3 {
+    /*    font-weight: bold;*/
+}
+
+h6 {
+    /*    font-weight: bold;*/
+}
+
+#picksheader {
+    font-weight: bold;
+    color: #FF0000;
+    font-size: 18px;
+}
+
+#read {
+    text-decoration: none;
+    color: FF0000;
+}
+
+#cardHeader {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+#bookmark {
+    color: #FF0000;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 10px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    z-index: 99999;
+    padding: 0;
+}
+
+
+
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+    background-color: white;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+/*    perspective: 1500px;*/
+
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #fff;
+    position: fixed;
+    /*    Make hidden by default */
+    left: -250px;
+    top: 15vh;
     color: #000;
+    font-weight: bold;
+    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+    transform-origin: bottom left;
+    /* top layer */
+    z-index: 9999;
+    height: 100vh;
+}
+
+#sidebar.active {
+    /* Remove the left hidden on sidebar active */
+    left: 0;
+    /*
+    margin-left: 0px;
+    transform: rotateY(100deg);
+*/
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#prof {
+    border-top: 1px solid #d32f2f;
+    border-bottom: 1px solid #ff8a80;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a :hover {
+    color: #FF0000;
+}
+
+
+/*========= SEARCH BUTTON =======================*/
+
+
+/* https://codepen.io/anon/pen/djYRqe    */
+
+#myInput {
+    border: none;
+    height: 100%;
+    border-radius: 0;
+    color: #EDEDED;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    display: block;
+}
+
+
+/*======= TABLETS ===========*/
+
+@media(max-width:767px) {
+    #myInput {
+        left: 0;
+    }
+    /*    // card top image*/
+    .card-img-top {
+        height: 150px;
+    }
+    body,
+    p,
+    .card.p {
+        font-size: 0.75rem;
+    }
+    h4 {
+        font-size: .9rem;
+    }
+}
+
+
+/**====== SMALLER PHONES ======*/
+
+@media(max-width:480px) {
+    /*    // card top image*/
+    .card-img-top {
+        height: 70px;
+    }
+}
+
+#myInput:focus {
+    background: #FF0000;
+    width: 150%;
+    transition: width 0.5s ease-in-out;
+    border: none;
+    box-shadow: none;
+    z-index: 3;
+    right: 0;
+    display: block;
+}
+
+#myInput:focus~.collapse #fade {
+    opacity: 0;
+    background-color: #880000;
+}
+
+#fade {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+#search {
+    /*    position: absolute;*/
+    z-index: 100;
+    color: black;
+}
+
+.glyphicon-search {
+    background-color: position: absolute;
+    margin-left: 20px;
+    z-index: 6;
+    font-size: 2em;
+    cursor: pointer;
+    padding-top: 0px;
+    color: #EDEDED;
+    display: block;
+    float: right;
+}
+
+
+/*========= END SEARCH BUTTON =======================*/
+
+
+/* ==== SOME OVERLAY FOR SIDE MENU=====*/
+
+.overlay {
+    display: flex;
+    position: fixed;
+    /* full screen */
+    width: 100vw;
+    height: 100%;
+    /* transparent black */
+    background: rgba(0, 0, 0, 0.7);
+    /* middle layer, i.e. appears below the sidebar */
+    z-index: 1;
+    opacity: 0;
+    /* animate the transition */
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* display .overlay when it has the .active class */
+
+.overlay.active {
+    display: block;
+    opacity: 0.7;
+    z-index: 500;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    /* top right corner of the sidebar */
+    top: 10px;
+    right: 10px;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    /*   padding: 10px;*/
+    min-height: 100vh;
+    transition: all 0.3s;
+    width: 100%;
+    z-index: 100;
+    /*    position: absolute;*/
+    margin-top: 45px;
 }
 
 #sidebarCollapse {
     width: 40px;
     height: 40px;
     margin: 5px;
-    /*    background: #f5f5f5;*/
-    background-color: #fff;
+/*        background: #f5f5f5;*/
 }
 
 #sidebarCollapse span {
@@ -50,6 +369,8 @@
     opacity: 1;
     margin: 5px auto;
 }
+
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -85,3 +406,496 @@
 }
 
 
+/*Custom css*/
+
+#picks .card-body,
+#recent .card-body {
+    height: 150px;
+    min-width: 225px;
+    margin-right: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+#picks {
+    padding-left: .3rem;
+    background: #fff;
+    margin-top: 0.5rem;
+    padding-top: 0;
+    margin-left: -0.5rem;
+}
+
+#recent {
+    padding-left: .3rem;
+    margin-left: -0.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#categories {
+    padding-left: .3rem;
+    margin-left: -0.5rem;
+    margin-top: 0;
+}
+
+
+/*=============CUSTOM CARD CSS BY ZULFA==============*/
+
+.cardbody {
+    padding-right: .1rem;
+}
+
+.cardmain {
+    width: 11rem;
+    height: 7rem;
+    border-radius: 6px;
+    margin-right: .4rem;
+    position: relative;
+    padding: 1.5rem .5rem 5rem;
+    overflow: hidden;
+    font-size: 12px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .20);
+    border: solid 2px rgba(0, 0, 0, .04);
+}
+#img {
+   border-radius: 6px;
+    margin-left: .4rem;
+/*     margin-right: .6rem;*/
+}
+
+.cardmain * {
+    z-index: 5;
+    position: relative;
+}
+
+#fas {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 1.2rem;
+    padding-left: .2rem;
+    color: #E22028;
+}
+
+#fass {
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    font-size: 1.2rem;
+    /*    padding-left: .2rem;*/
+    color: #13C4A4;
+}
+
+.cardmain h3 {
+    font-weight: 700;
+    font-size: .8rem;
+    line-height: 1
+}
+
+.cardmain p {
+    line-height: 1;
+    font-size: .75rem;
+    margin: 0;
+}
+
+.cardmain.wht,
+.cardmain.wht h3 {
+    color: #fff
+}
+
+.cardmain .img-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    z-index: 1
+}
+
+.cardmain .img-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+    width: 100%;
+    height: 100%
+}
+
+
+/*=============END OF CUSTOM CARD CSS BY ZULFA==============*/
+
+
+/*============== SCROLLING CLASS ==================*/
+
+.section-scroll {
+    overflow-x: scroll;
+}
+
+#cards {
+    overflow-x: scroll;
+}
+
+ ::-webkit-scrollbar {
+    display: none;
+}
+
+#content {
+    overflow: hidden;
+}
+
+
+/* ======= MORE CUSTOM CARDS ===============*/
+
+
+/*==== Cards on the most-read section ======*/
+
+.card {
+    box-shadow: 5px 3px 18px #888888;
+}
+
+#most-read .card {
+    margin-bottom: 10px;
+}
+
+#most-read div div:nth-child(odd) .card .card-img-overlay {
+    background: rgba( 0, 0, 0, 0.3);
+}
+
+#most-read div div:nth-child(odd) .card .card-img-overlay h5,
+#most-read div div:nth-child(odd) .card .card-img-overlay p,
+#most-read div div:nth-child(odd) .card .card-img-overlay .float-right {
+    color: white;
+}
+
+.card-body h4,
+.card-img-overlay h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-body p,
+.card-img-overlay p {
+    font-size: 12px;
+}
+
+.card-body a {
+    color: #FF0000;
+}
+
+
+/* =============== CATEGORIES  ==========*/
+
+#categories table {
+    /*===== make the section to center =====*/
+    margin: auto;
+}
+
+#categories .card {
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: 0px;
+    box-shadow: 0px 0px 0px #888888
+}
+
+#categories .card-body {
+    padding: 0rem;
+}
+
+#categories.col-sm-3,
+#categories.col3 {
+    padding: 0px;
+}
+
+#categories .card .active .card-body {
+    border-bottom-color: black;
+    border-bottom-width: 5px;
+}
+
+
+/* Remove all the background */
+
+#category-education .card-img,
+#category-family .card-img,
+#category-law .card-img,
+#category-science .card-img,
+#category-rights .card-img,
+#category-culture .card-img,
+#category-technology .card-img,
+#category-business .card-img,
+#category-environment .card-img {
+    /*        background: white;*/
+    /*    content: url(../img/whiteimg.png);*/
+    /*        background-color: white;*/
+}
+
+
+/* Setting the colors */
+
+#category-family * {
+    color: #DF4B7A;
+}
+
+#category-education * {
+    color: #638894;
+}
+
+#category-law * {
+    color: #D65D00;
+}
+
+#category-science * {
+    color: #AF5EB5;
+}
+
+#category-rights * {
+    color: #E22028;
+}
+
+#category-environment * {
+    color: #6DB230;
+}
+
+#category-technology * {
+    color: #2D7CB8
+}
+
+#category-culture * {
+    color: 13c4a4;
+}
+
+
+/*======== CUSTOM CAROUSEL BUTTONS by Victor ===============*/
+
+.owl-theme .overlay {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 40px;
+    height: 5px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #FF0000;
+}
+
+#slider-main .owl-theme .owl-dots .owl-dot span {
+    width: 40px;
+    height: 3px;
+    margin: 5px 7px;
+    background: #FFFFFF;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+
+#slider-main .jumbotron {
+    border-radius: 0;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* the slides */
+
+.slick-slide {
+    margin-left: 27px;
+}
+
+
+/* the parent */
+
+.slick-list {
+    margin-left: -27px;
+}
+
+.my-overlay {
+    background: rgba(0, 255, 255, 0.9);
+}
+
+
+/*
+    .owl-dots {
+        top: -20px;
+    }
+*/
+
+.btn-lg,
+.btn-grp-lg>.btn,
+{
+    border-radius: 0rem;
+}
+
+
+/* ======== MAIN SLIDER STYLING ============ */
+
+#slider-main h1 {
+    font-weight: bold;
+    color: #FFFFFF;
+    font: 4rem;
+}
+
+#slider-main h4 {
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+
+#slider-main {
+    font-weight: normal;
+    color: #FF0000;
+    margin-top: 0.4rem;
+}
+
+#slider-main .owl-stage-outer {
+    /*        position: relative;*/
+    box-sizing: content-box;
+    z-index: 10;
+}
+
+#slider-main .owl-dots {
+    position: relative;
+    z-index: 99;
+    margin-top: -55px;
+    padding-bottom: 30px;
+}
+
+#slider-main .owl-stage {
+    position: relative;
+    z-index: 99;
+}
+
+#slider-main .owl-theme .owl-dots .owl-dot.active span,
+#slider-main .owl-theme .owl-dots .owl-dot:hover span {
+    background: #FF0000;
+}
+
+#slider-main .slider-item-content {
+    background: rgba(0, 255, 255, 0.9);
+    background-size: 100% 300%;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#slider-main .jumbotron {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#jumbo {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+/*================ SEARCH MODAL ===================*/
+
+
+
+/*Fixing the bug that modal doesn't appear*/
+
+.modal-backdrop {
+    /*    bug fix - no overlay */
+    display: block;
+    /*    z-index: 1;*/
+}
+
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
+.modal-dialog {
+    margin: 2px auto;
+    z-index: 1100 !important;
+}
+
+
+
+
+/* REMOVING THE 15PX MARGIN ON CARDS */
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col,
+.col-auto,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm,
+.col-sm-auto,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md,
+.col-md-auto,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg,
+.col-lg-auto,
+.col-xl-1,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl,
+.col-xl-auto {
+    padding-right: 5px;
+    padding-left: 5px;
+}
