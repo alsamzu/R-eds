@@ -150,7 +150,7 @@ a:focus {
     background: #fff;
     position: fixed;
     /*    Make hidden by default */
-    left: -250px;
+    right: -250px;
     top: 15vh;
     color: #000;
     font-weight: bold;
@@ -163,7 +163,7 @@ a:focus {
 
 #sidebar.active {
     /* Remove the left hidden on sidebar active */
-    left: 0;
+    right: 0;
     /*
     margin-left: 0px;
     transform: rotateY(100deg);
